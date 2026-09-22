@@ -1,22 +1,20 @@
-## Development
+# AGENTS.md
 
-When starting the dev server, use background mode:
+このRepositoryは `oosaka0123-sudo/ai-master` の共通Web制作標準に従う。
 
-```
-astro dev --background
-```
+作業開始時:
+1. ai-master の `AGENTS.md` を確認する。
+2. ai-master の `WEB_DEVELOPMENT.md` を確認する。
+3. このRepositoryのREADMEとcurrent codeを確認する。
+4. Astro公式Documentationは採用バージョンに対応する内容を使う。
 
-Manage the background server with `astro dev stop`, `astro dev status`, and `astro dev logs`.
+原則:
+- Static First
+- Zero-JS by default
+- Islandsは必要部分だけ
+- Astro標準機能を外部依存より優先
+- Secretをcommitしない
+- `npm run check` と `npm run build` を完了条件に含める
+- Mobile / Preview / Productionを確認する
 
-## Documentation
-
-Full documentation: https://docs.astro.build
-
-Consult these guides before working on related tasks:
-
-- [Adding pages, dynamic routes, or middleware](https://docs.astro.build/en/guides/routing/)
-- [Working with Astro components](https://docs.astro.build/en/basics/astro-components/)
-- [Using React, Vue, Svelte, or other framework components](https://docs.astro.build/en/guides/framework-components/)
-- [Adding or managing content](https://docs.astro.build/en/guides/content-collections/)
-- [Adding styles or using Tailwind](https://docs.astro.build/en/guides/styling/)
-- [Supporting multiple languages](https://docs.astro.build/en/guides/internationalization/)
+Projectへ複製して使う場合、Project固有要件はそのProjectの文書へ記録する。
